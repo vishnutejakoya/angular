@@ -29,8 +29,6 @@ namespace EMS.DataAccess.Repository
                                                .Replace("{emp_first_name}", employee.FirstName)
                                                .Replace("{emp_middle_name}", employee.MiddleName)
                                                .Replace("{emp_last_name}", employee.LastName)
-                                               .Replace("{emp_dob}", employee.DateOfBirth.GetValueOrDefault().ToString())
-                                               .Replace("{emp_doj}", employee.DateOfJoining.GetValueOrDefault().ToString())
                                                .Replace("{emp_username}", employee.UserName)
                                                .Replace("{emp_password}", employee.Password)
                                                .Replace("{emp_address}", employee.Address)
@@ -90,8 +88,8 @@ namespace EMS.DataAccess.Repository
                             FirstName = reader["emp_first_name"] != DBNull.Value ? Convert.ToString(reader["emp_first_name"]) : string.Empty,
                             MiddleName = reader["emp_middle_name"] != DBNull.Value ? Convert.ToString(reader["emp_middle_name"]) : string.Empty,
                             LastName = reader["emp_last_name"] != DBNull.Value ? Convert.ToString(reader["emp_last_name"]) : string.Empty,
-                            DateOfBirth = reader["emp_dob"] != DBNull.Value ? Convert.ToDateTime(reader["emp_dob"]) : DateTime.MinValue,
-                            DateOfJoining = reader["emp_doj"] != DBNull.Value ? Convert.ToDateTime(reader["emp_doj"]) : DateTime.MinValue,
+                            //DateOfBirth = reader["emp_dob"] != DBNull.Value ? Convert.ToDateTime(reader["emp_dob"]) : DateTime.MinValue,
+                            //DateOfJoining = reader["emp_doj"] != DBNull.Value ? Convert.ToDateTime(reader["emp_doj"]) : DateTime.MinValue,
                             UserName = reader["emp_username"] != DBNull.Value ? Convert.ToString(reader["emp_username"]) : string.Empty,
                             Password = reader["emp_password"] != DBNull.Value ? Convert.ToString(reader["emp_password"]) : string.Empty,
                             MobileNumber = reader["emp_mobile"] != DBNull.Value ? Convert.ToString(reader["emp_mobile"]) : string.Empty,
@@ -122,8 +120,8 @@ namespace EMS.DataAccess.Repository
                             FirstName = reader["emp_first_name"] != DBNull.Value ? Convert.ToString(reader["emp_first_name"]) : string.Empty,
                             MiddleName = reader["emp_middle_name"] != DBNull.Value ? Convert.ToString(reader["emp_middle_name"]) : string.Empty,
                             LastName = reader["emp_last_name"] != DBNull.Value ? Convert.ToString(reader["emp_last_name"]) : string.Empty,
-                            DateOfBirth = reader["emp_dob"] != DBNull.Value ? Convert.ToDateTime(reader["emp_dob"]) : DateTime.MinValue,
-                            DateOfJoining = reader["emp_doj"] != DBNull.Value ? Convert.ToDateTime(reader["emp_doj"]) : DateTime.MinValue,
+                            //DateOfBirth = reader["emp_dob"] != DBNull.Value ? Convert.ToDateTime(reader["emp_dob"]) : DateTime.MinValue,
+                            //DateOfJoining = reader["emp_doj"] != DBNull.Value ? Convert.ToDateTime(reader["emp_doj"]) : DateTime.MinValue,
                             UserName = reader["emp_username"] != DBNull.Value ? Convert.ToString(reader["emp_username"]) : string.Empty,
                             Password = reader["emp_password"] != DBNull.Value ? Convert.ToString(reader["emp_password"]) : string.Empty,
                             MobileNumber = reader["emp_mobile"] != DBNull.Value ? Convert.ToString(reader["emp_mobile"]) : string.Empty,
@@ -154,8 +152,8 @@ namespace EMS.DataAccess.Repository
                             FirstName = reader["emp_first_name"] != DBNull.Value ? Convert.ToString(reader["emp_first_name"]) : string.Empty,
                             MiddleName = reader["emp_middle_name"] != DBNull.Value ? Convert.ToString(reader["emp_middle_name"]) : string.Empty,
                             LastName = reader["emp_last_name"] != DBNull.Value ? Convert.ToString(reader["emp_last_name"]) : string.Empty,
-                            DateOfBirth = reader["emp_dob"] != DBNull.Value ? Convert.ToDateTime(reader["emp_dob"]) : DateTime.MinValue,
-                            DateOfJoining = reader["emp_doj"] != DBNull.Value ? Convert.ToDateTime(reader["emp_doj"]) : DateTime.MinValue,
+                            //DateOfBirth = reader["emp_dob"] != DBNull.Value ? Convert.ToDateTime(reader["emp_dob"]) : DateTime.MinValue,
+                            //DateOfJoining = reader["emp_doj"] != DBNull.Value ? Convert.ToDateTime(reader["emp_doj"]) : DateTime.MinValue,
                             UserName = reader["emp_username"] != DBNull.Value ? Convert.ToString(reader["emp_username"]) : string.Empty,
                             Password = reader["emp_password"] != DBNull.Value ? Convert.ToString(reader["emp_password"]) : string.Empty,
                             MobileNumber = reader["emp_mobile"] != DBNull.Value ? Convert.ToString(reader["emp_mobile"]) : string.Empty,
@@ -176,8 +174,6 @@ namespace EMS.DataAccess.Repository
                                                .Replace("{emp_first_name}", employee.FirstName)
                                                .Replace("{emp_middle_name}", employee.MiddleName)
                                                .Replace("{emp_last_name}", employee.LastName)
-                                               .Replace("{emp_dob}", employee.DateOfBirth.GetValueOrDefault().ToString())
-                                               .Replace("{emp_doj}", employee.DateOfJoining.GetValueOrDefault().ToString())
                                                .Replace("{emp_username}", employee.UserName)
                                                .Replace("{emp_password}", employee.Password)
                                                .Replace("{emp_address}", employee.Address)

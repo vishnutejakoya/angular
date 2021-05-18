@@ -64,7 +64,7 @@ using EMS.Models;
             WriteLiteral("\n<h2>Employee List</h2>\n\n<p class=\"margin-top-alignment\">\n    ");
             EndContext();
             BeginContext(145, 138, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "82ea5f2fa8984b8d93ceacd9d12fd1bd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0ad6a5ef23444906b8d6624115096580", async() => {
                 BeginContext(192, 87, true);
                 WriteLiteral("\n        <i class=\"glyphicon glyphicon-user\"></i> <span>Create New Employee</span>\n    ");
                 EndContext();
